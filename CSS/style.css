@@ -1,0 +1,75 @@
+div.navigation a{
+    color: rgb(19, 140, 6);
+    padding-left: 11vw;
+    height: fit-content;
+}
+div.navigation {
+    position: fixed;
+    top: 0px;
+    width: 98.65%;
+    background-color: rgb(12, 77, 99);
+    border: solid black;
+    z-index: 1;
+}
+body {
+    background-image: url('../Pictures/monkeys.jpg');
+    background-size: 50%;
+}
+h1, h2 {
+    color: rgb(7, 54, 2);
+    background-color: lightblue;
+    border: solid black;
+    width: fit-content;
+}
+#alex {
+    position: relative;
+    bottom: 20px;
+    width: 57vw;
+    border: solid black;
+}
+p {
+    color: rgb(21, 112, 12);
+    background-color: lightblue;
+    border: solid black;
+}
+table, th, td {
+    color: rgb(21, 112, 12);
+    background-color: lightblue;
+    border: 3px solid;
+    border-color: rgb(7, 54, 2);
+}
+a {
+    text-decoration: none;
+    color: rgb(173, 141, 195);
+    
+}
+a:visited {
+    color: rgb(110, 37, 158);
+    text-decoration: solid;
+}
+.wikipedia{
+    position: absolute;
+    z-index: -1;
+    bottom: 0%;
+    width: 99vw;
+    height: 91vh;
+}
+fieldset {
+    background-color: lightblue;
+    border: solid black;
+    color: rgb(21, 112, 12);
+}
+select {
+    color: rgb(21, 112, 12);
+}
+#wrapper {
+    display: flex;
+}
+.newAttribute {
+    color: rgb(25, 4, 93);
+    background-color: rgb(58, 8, 224);
+    border: 3px solid;
+    color: rgb(25, 4, 93);
+    transform: scale(1.2);
+    margin-left: 4vw;
+}

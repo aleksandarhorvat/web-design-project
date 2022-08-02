@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="sr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #input1 {
+                margin-left: 13%;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <script src="JS/script.js"></script>
+        <title>Quiz</title>
+    </head>
+    <body onload="initialize()">
+        <div class="navigation">
+            <a href="Home Page.html"><b>Home Page</b></a>
+            <a href="Biography.html"><b>Biography</b></a>
+            <a href="Music Career.html"><b>Music Career</b></a>
+            <a href="Concerts.html"><b>Concerts</b></a>
+            <a href="Quiz.html"><b>Quiz</b></a>
+        </div>
+        
+        <h1>Quiz</h1>
+        
+        <form action="#" id="form" onsubmit="return validate()">
+            <fieldset>
+                <legend><b>Questions about Alex: </b></legend>
+                <label>What is the name of the city Alex is from: </label>
+                <select id="city" required>
+                    <option value="">-</option>
+                    <option value="Dronfield ">Dronfield</option>
+                    <option value="Chesterfield">Chesterfield</option>
+                    <option value="Sheffield">Sheffield</option>
+                    <option value="Chapeltown">Chapeltown</option>
+                </select>
+                <br><br>
+                <label>What year was Alex born: </label>
+                <input type="number" id="yearAlex" required min="1960" max="2000">
+
+                <br><br>
+                <label>What instruments can Alex play: </label>
+                <input type="checkbox" name="instrument" value="Guitar">
+                <label>Guitar</label>
+                <input type="checkbox" name="instrument" value="Drums">
+                <label>Drums</label>
+                <input type="checkbox" name="instrument" value="Violin">
+                <label>Violin</label>
+                <input type="checkbox" name="instrument" value="Piano">
+                <label>Piano</label>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Questions about Arctic Monkeys: </b></legend>
+                <label>How many albums do they have: </label>
+                <select id="albumArctic" required>
+                    <option value="">-</option>
+                    <option value="2">2</option>
+                    <option value="7">7</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                </select>
+                <br><br>
+                <label>What year was the band founded: </label>
+                <br>
+                <input id="input1" type="radio" name="yearArctic" value="1999" required>1999.
+                <br>
+                <input id="input1" type="radio" name="yearArctic" value="2000" required>2000.
+                <br>
+                <input id="input1" type="radio" name="yearArctic" value="2007" required>2007.
+                <br>
+                <input id="input1" type="radio" name="yearArctic" value="2002" required>2002.
+
+                <br><br>
+                <label>What kind of music they play: </label>
+                <input type="checkbox" name="typeMusic" value="Pop">
+                <label>Pop</label>
+                <input type="checkbox" name="typeMusic" value="Rock">
+                <label>Rock</label>
+                <input type="checkbox" name="typeMusic" value="Blues">
+                <label>Blues</label>
+                <input type="checkbox" name="typeMusic" value="Jazz">
+                <label>Jazz</label>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Questions about Last Shadow Puppets: </b></legend>
+                <label>What year was the band founded: </label>
+                <input type="number" id="yearShadow" min="1990" max="2010" required>
+                <br><br>
+                <label>How many albums do they have: </label>
+                <input type="number" id="albumsShadow" min="0" max="20" required>
+
+                <br><br>
+                <label>What year did they hold their last concert: </label>
+                <input type="checkbox" name="lastConcert" value="2018">
+                <label>2018.</label>
+                <input type="checkbox" name="lastConcert" value="2016">
+                <label>2016.</label>
+                <input type="checkbox" name="lastConcert" value="2017">
+                <label>2017.</label>
+                <input type="checkbox" name="lastConcert" value="2015">
+                <label>2015.</label>
+            </fieldset>
+            <fieldset>
+                <legend><b>Your information: </b></legend>
+                <label>Enter your first and last name: </label>
+                <input type="text" id="nameLastName" required>
+                <br><br>
+                <label>Enter your email: </label>
+                <input type="text" id="mail" required>
+                <br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
